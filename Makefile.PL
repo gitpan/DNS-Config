@@ -2,10 +2,10 @@
 #
 # Makefile.PL
 #
-# $Id: Makefile.PL,v 1.2 2003/02/07 23:45:53 awolf Exp $
-# $Revision: 1.2 $
+# $Id: Makefile.PL,v 1.3 2003/02/16 10:17:16 awolf Exp $
+# $Revision: 1.3 $
 # $Author: awolf $
-# $Date: 2003/02/07 23:45:53 $
+# $Date: 2003/02/16 10:17:16 $
 #
 ######################################################################
 
@@ -16,7 +16,7 @@ use warnings;
 use ExtUtils::MakeMaker;
 
 my $NAME     = 'DNS-Config';
-my $VERSION  = '0.65';
+my $VERSION  = '0.66';
 
 #--- Prototypes ---#
 sub check_makefile_exists( );

@@ -3,10 +3,10 @@
 #
 # DNS/Config.pm
 #
-# $Id: Config.pm,v 1.2 2003/02/05 20:17:13 awolf Exp $
-# $Revision: 1.2 $
+# $Id: Config.pm,v 1.4 2003/02/16 10:15:31 awolf Exp $
+# $Revision: 1.4 $
 # $Author: awolf $
-# $Date: 2003/02/05 20:17:13 $
+# $Date: 2003/02/16 10:15:31 $
 #
 # Copyright (C)2001-2003 Andy Wolf. All rights reserved.
 #
@@ -22,8 +22,8 @@ use 5.6.0;
 use strict;
 use warnings;
 
-my $VERSION   = '0.65';
-my $REVISION  = sprintf("%d.%02d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
+my $VERSION   = '0.66';
+my $REVISION  = sprintf("%d.%02d", q$Revision: 1.4 $ =~ /(\d+)\.(\d+)/);
 
 sub new {
 	my($pkg) = @_;
@@ -53,8 +53,9 @@ sub add {
 
 sub delete {
 	my($self, $statement) = @_;
-	
-	for(my $i=0 ; $self->{'STATEMENTS'}->[$i] ; $i++) {
+
+	for(my $i=0 ; $i < scalar @{$self->{'STATEMENTS'}} ; $i++) {
+		next unless( defined( $self->{'STATEMENTS'}->[$i] ) );
 		splice @{ $self->{'STATEMENTS'} }, $i, 1 if($self->{'STATEMENTS'}->[$i] == $statement);
 	}
 	

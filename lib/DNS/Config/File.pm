@@ -3,10 +3,10 @@
 #
 # DNS/Config/File.pm
 #
-# $Id: File.pm,v 1.4 2003/02/07 23:55:15 awolf Exp $
-# $Revision: 1.4 $
+# $Id: File.pm,v 1.5 2003/02/16 10:15:31 awolf Exp $
+# $Revision: 1.5 $
 # $Author: awolf $
-# $Date: 2003/02/07 23:55:15 $
+# $Date: 2003/02/16 10:15:31 $
 #
 # Copyright (C)2001-2003 Andy Wolf. All rights reserved.
 #
@@ -22,8 +22,8 @@ use 5.6.0;
 use strict;
 use warnings;
 
-my $VERSION   = '0.65';
-my $REVISION  = sprintf("%d.%02d", q$Revision: 1.4 $ =~ /(\d+)\.(\d+)/);
+my $VERSION   = '0.66';
+my $REVISION  = sprintf("%d.%02d", q$Revision: 1.5 $ =~ /(\d+)\.(\d+)/);
 
 sub new {
 	my($pkg, %hash) = @_;

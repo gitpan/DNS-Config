@@ -3,10 +3,10 @@
 #
 # DNS/Config/Statement/Options.pm
 #
-# $Id: Options.pm,v 1.2 2003/02/05 20:17:14 awolf Exp $
-# $Revision: 1.2 $
+# $Id: Options.pm,v 1.3 2003/02/16 10:15:33 awolf Exp $
+# $Revision: 1.3 $
 # $Author: awolf $
-# $Date: 2003/02/05 20:17:14 $
+# $Date: 2003/02/16 10:15:33 $
 #
 # Copyright (C)2001-2003 Andy Wolf. All rights reserved.
 #
@@ -27,8 +27,8 @@ use DNS::Config::Statement;
 
 @ISA = qw(DNS::Config::Statement);
 
-my $VERSION   = '0.65';
-my $REVISION  = sprintf("%d.%02d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
+my $VERSION   = '0.66';
+my $REVISION  = sprintf("%d.%02d", q$Revision: 1.3 $ =~ /(\d+)\.(\d+)/);
 
 sub new {
 	my($pkg) = @_;
